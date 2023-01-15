@@ -79,8 +79,6 @@ _k) List all files in the current directory whose second character is a digit._<
 
 _l) Use command(s) to create a directory in your home directory called KeepOut whose contents can be read only by you._<br>
 
-**$cd ~**<br>
+**$cd \~**<br>
 **$mkdir KeepOut**<br>
-**$chmod 477 KeepOut**
-
----
+**$chmod 400 KeepOut**

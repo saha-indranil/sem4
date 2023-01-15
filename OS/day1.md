@@ -54,5 +54,3 @@ _h) Use man to get help_<br>
 _i) Ensure that bc displays the results of all divisions using three decimal places._<br>
 
 **$echo "scale=3; 22/7" | bc**
-
----
