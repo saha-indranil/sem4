@@ -53,8 +53,8 @@ _h) Use man to get help_<br>
 
 _i) Ensure that bc displays the results of all divisions using three decimal places._<br>
 
-**$bc**
-**scale=3**
-**10/3**
-**3.333**
+**$bc**<br>
+**scale=3**<br>
+**10/3**<br>
+**3.333**<br>
 **quit**
