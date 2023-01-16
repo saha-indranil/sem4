@@ -4,16 +4,15 @@
 
 _a) Create a directory structure in your home directory (cse, two subdirectories cprogs and projects under cse) while being in your home directory._<br>
 
+**$cd \~**<br>
 **$mkdir cse**<br>
-**$cd cse**<br>
-**$mkdir cprogs**<br>
-**$mkdir projects**
+**$mkdir cse/cprogs cse/projects**
 
 ---
 
 _b) Change to the directory projects._<br>
 
-**$cd projects**
+**$cd cse/projects**
 
 ---
 
@@ -30,14 +29,13 @@ _c) Create a file called biodata and store your name, age, sex, and address in i
 
 _d) Make a copy of the file biodata into another file text within the directory cprogs._<br>
 
-**$cd ..**<br>
-**$cp projects/biodata.txt cprogs/text.txt**
+**$cp biodata.txt ../cprogs/text.txt**
 
 ---
 
 _e) Move the file text from cprogs to projects._<br>
 
-**$mv cprogs/text.txt projects**
+**$mv ../cprogs/text.txt .**
 
 ---
 
