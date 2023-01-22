@@ -1,5 +1,7 @@
 ## OS Day 2
 
+(use desktop view)
+
 ---
 
 _a) Create a directory structure in your home directory (cse, two subdirectories cprogs and projects under cse) while being in your home directory._<br>
