@@ -50,7 +50,7 @@ _4. Copy the content of Text1 to Text8._<br>
 
 _5. Copy the content of Text3 and Text4 to Text7._<br>
 
-**$cat Folder2/Text3.txt Folder2/Text4.txt>Folder4>Text7.txt**
+**$cat Folder2/Text3.txt Folder2/Text4.txt>Folder4/Text7.txt**
 
 ---
 
@@ -62,7 +62,7 @@ _6. Move the file Text2 to directory Text5._<br>
 
 _7. Combine Text3 and Text4 to a file named COMBINETEXT._<br>
 
-**$cat Folder2/Text3 Folder2/Text4 > Folder2/COMBINETEXT**
+**$cat Folder2/Text3.txt Folder2/Text4.txt > Folder2/COMBINETEXT.txt**
 
 ---
 
