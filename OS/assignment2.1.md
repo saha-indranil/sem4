@@ -16,7 +16,7 @@
 **$cat>Text3.txt**<br>
 **man who<br>ctrl+z<br>**
 **$cat>Text4.txt**<br>
-**typescript<br>ctrl+z<br>**
+**tty<br>w<br>ctrl+z<br>**
 **$cd ..**
 
 ---
@@ -29,10 +29,14 @@ _1. Run the files text1,text3._<br>
 ---
 
 _2. For text4 do the typescripting._<br>
+**$script Folder2/Text4.typescript**<br>
+**$sh Folder2/Text4.txt**<br>
+**$exit**
 
 ---
 
 _3. Change the name of Typescripting to T1._<br>
+**$mv Folder2/Text4.typescript Folder2/T1.typescript**
 
 ---
 
@@ -68,4 +72,4 @@ _8. Change the permission of Text5 whose contents can be read by you, write and 
 
 _9. Delete the directory Folder 3_<br>
 
-**$rm -r Folder3**
+**$rm -rv Folder3**
