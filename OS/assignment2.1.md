@@ -29,6 +29,7 @@ _1. Run the files text1,text3._<br>
 ---
 
 _2. For text4 do the typescripting._<br>
+
 **$script Folder2/Text4.typescript**<br>
 **$sh Folder2/Text4.txt**<br>
 **$exit**
@@ -36,6 +37,7 @@ _2. For text4 do the typescripting._<br>
 ---
 
 _3. Change the name of Typescripting to T1._<br>
+
 **$mv Folder2/Text4.typescript Folder2/T1.typescript**
 
 ---
@@ -64,12 +66,12 @@ _7. Combine Text3 and Text4 to a file named COMBINETEXT._<br>
 
 ---
 
-_8. Change the permission of Text5 whose contents can be read by you, write and execute by group and no permission for 3rd user level_<br>
+_8. Change the permission of Text5 whose contents can be read by you, write and execute by group and no permission for 3rd user level._<br>
 
 **$chmod 430 Folder3/Text5**
 
 ---
 
-_9. Delete the directory Folder 3_<br>
+_9. Delete the directory Folder3._<br>
 
 **$rm -rv Folder3**
