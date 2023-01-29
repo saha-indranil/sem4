@@ -4,8 +4,8 @@ add(A, B, C) :- C is A + B.
 multiply(A, B, C) :- C is A * B.
 
 /*
-
 OUTPUT
+
 ?- add(10,15,X).
 X = 25.
 
