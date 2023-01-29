@@ -2,9 +2,10 @@
 
 ## AIML Lab :brain:
 
-| Day   | Assignment                            |
-| ----- | ------------------------------------- |
-| Day 1 | [Assignment 1](./AIML/assignment1.pl) |
+| No. | Assignment                            |
+| --- | ------------------------------------- |
+| #1  | [Assignment 1](./AIML/assignment1.pl) |
+| #2  | [Assignment 2](./AIML/assignment2)    |
 
 ---
 
@@ -17,7 +18,7 @@
 
 ---
 
-## DAA Lab :trollface:
+## DAA Lab :trollface: :trollface:
 
 ---
 
