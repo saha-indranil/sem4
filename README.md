@@ -24,6 +24,6 @@
 
 ## COA Lab :zero: :one:
 
-| Hardware        | Software    |
-| --------------- | ----------- |
-| Shift Registers | Basic Gates |
+| Hardware        | Software                         |
+| --------------- | -------------------------------- |
+| Shift Registers | [Basic Gates](./COA/assignment1) |
