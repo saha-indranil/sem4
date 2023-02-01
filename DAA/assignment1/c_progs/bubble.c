@@ -1,4 +1,4 @@
-// Write a C program to perform insertion sort using dynamic memory allocation.
+// Write a C program to perform bubble sort using dynamic memory allocation.
 // Show the running time complexity w.r.t different input cases. Finally comment
 // that whether it is matching with the expected complexity of O(n^2) or not.
 
@@ -6,19 +6,20 @@
 #include <stdlib.h>
 #include <time.h>
 
-void insertion_sort(int *arr, int n)
+void bubble_sort(int arr[], int n)
 {
-    int i, key, j;
-    for (i = 1; i < n; i++)
+    int i, j, swap;
+    for (i = 0; i < n - 1; i++)
     {
-        key = arr[i];
-        j = i - 1;
-        while (j >= 0 && arr[j] > key)
+        for (j = 0; j < n - i - 1; j++)
         {
-            arr[j + 1] = arr[j];
-            j = j - 1;
+            if (arr[j] > arr[j + 1])
+            {
+                swap = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = swap;
+            }
         }
-        arr[j + 1] = key;
     }
 }
 
@@ -45,7 +46,7 @@ int main()
         arr[0][j] = j;
     start = clock();
     for (i = 0; i < loops; i++)
-        insertion_sort(arr[0], n);
+        bubble_sort(arr[0], n);
     end = clock();
     printf("Best Case: %.2f ms\n", ((double)(end - start)) * 1000 / CLOCKS_PER_SEC);
 
@@ -57,7 +58,7 @@ int main()
     }
     start = clock();
     for (i = 0; i < loops; i++)
-        insertion_sort(arr[i], n);
+        bubble_sort(arr[i], n);
     end = clock();
     printf("Average Case: %.2f ms\n", ((double)(end - start)) * 1000 / CLOCKS_PER_SEC);
 
@@ -69,7 +70,7 @@ int main()
     }
     start = clock();
     for (i = 0; i < loops; i++)
-        insertion_sort(arr[i], n);
+        bubble_sort(arr[i], n);
     end = clock();
     printf("Worst Case %.2f ms\n", ((double)(end - start)) * 1000 / CLOCKS_PER_SEC);
 
@@ -84,17 +85,13 @@ int main()
 }
 
 // OUTPUT
-// Best Case: 0.00 ms
-// Average Case: 64.00 ms
-// Worst Case 129.00 ms
+// Best Case: 110.00 ms
+// Average Case: 188.00 ms
+// Worst Case 217.00 ms
 
-// The expected time complexity of insertion sort is O(n^2)
-// in the worst case, where n is the number of elements in the array.
-// This is because in the worst case, the algorithm must make n-1
-// comparisons and swaps for each element. The overall complexity
-// would be O(n^2) because each comparison and swap takes O(n) time.
-
-// But🍑 The best-case time complexity of insertion sort is O(n),
-// where n is the number of elements in the array. In the best case,
-// the input array is already sorted, so the algorithm will make only
-// n-1 comparisons, but no swaps, resulting in a time complexity of O(n).
+// Best Case: When the array is already sorted, the inner loop won't
+// execute at all, leading to O(n) time complexity.
+// Average Case: In the average case, the time complexity of Bubble Sort is O(n^2).
+// Worst Case: When the array is sorted in reverse order, in each iteration,
+// the largest element has to be compared n times to reach its final position,
+// leading to n^2 comparisons and swaps.

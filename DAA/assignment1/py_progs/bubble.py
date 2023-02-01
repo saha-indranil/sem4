@@ -4,14 +4,12 @@
 import random
 import time
 
-def insertion_sort(arr):
-    for i in range(1, len(arr)):
-        key = arr[i]
-        j = i - 1
-        while j >= 0 and arr[j] > key:
-            arr[j + 1] = arr[j]
-            j -= 1
-        arr[j + 1] = key
+def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(0, n-i-1):
+            if arr[j] > arr[j+1] :
+                arr[j], arr[j+1] = arr[j+1], arr[j]
 
 if __name__ == "__main__":
     n = 1000
@@ -23,7 +21,7 @@ if __name__ == "__main__":
         arr[0][j] = j
     start = time.time()
     for i in range(loops):
-        insertion_sort(arr[0])
+        bubble_sort(arr[0])
     end = time.time()
     print("Best Case: ", '{:.4f}'.format(end - start), "seconds")
 
@@ -33,7 +31,7 @@ if __name__ == "__main__":
             arr[i][j] = random.randint(0, n)
     start = time.time()
     for i in range(loops):
-        insertion_sort(arr[i])
+        bubble_sort(arr[i])
     end = time.time()
     print("Average Case: ", '{:.4f}'.format(end - start), "seconds")
 
@@ -43,11 +41,11 @@ if __name__ == "__main__":
             arr[i][j] = n - j - 1
     start = time.time()
     for i in range(loops):
-        insertion_sort(arr[i])
+        bubble_sort(arr[i])
     end = time.time()
     print("Worst Case: ", '{:.4f}'.format(end - start), "seconds")
 
 # OUTPUT
-# Best Case:  0.0151 seconds
-# Average Case:  2.5529 seconds
-# Worst Case:  4.7800 seconds
+# Best Case:  2.8415 seconds
+# Average Case:  5.2462 seconds
+# Worst Case:  7.0989 seconds
