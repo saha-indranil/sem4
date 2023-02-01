@@ -1,4 +1,4 @@
-# Write a python program to perform insertion sort using dynamic memory 
+# Write a python program to perform bubble sort using dynamic memory 
 # allocation. Show the running time complexity w.r.t different input cases.
 
 import random
