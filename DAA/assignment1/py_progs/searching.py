@@ -46,7 +46,7 @@ if __name__ == "__main__":
     print("Best case scenario for binary search:", '{:.4f}'.format(end - start), "seconds")
 
     # Linear search : average case
-    x = arr[n//2]
+    x = arr[(n-1)//2]
     start = time.time()
     for i in range(10000):
         result = linear_search(arr, n, x)
@@ -54,7 +54,7 @@ if __name__ == "__main__":
     print("Average case scenario for linear search:", '{:.4f}'.format(end - start), "seconds")
 
     # binary search : average case
-    x = arr[700]
+    x = arr[62]
     start = time.time()
     for i in range(10000):
         result = binary_search(arr, 0, n-1, x)
@@ -78,9 +78,9 @@ if __name__ == "__main__":
     print("Worst case scenario for binary search:", '{:.4f}'.format(end - start), "seconds")
 
 # OUTPUT  
-# Best case scenario for linear search: 0.0034 seconds
-# Best case scenario for binary search: 0.0283 seconds
-# Average case scenario for linear search: 0.1696 seconds
-# Average case scenario for binary search: 0.0195 seconds
-# Worst case scenario for linear search: 0.3478 seconds
-# Worst case scenario for binary search: 0.0377 seconds
+# Best case scenario for linear search: 0.0042 seconds
+# Best case scenario for binary search: 0.0166 seconds
+# Average case scenario for linear search: 0.1678 seconds
+# Average case scenario for binary search: 0.0317 seconds
+# Worst case scenario for linear search: 0.3382 seconds
+# Worst case scenario for binary search: 0.0261 seconds
