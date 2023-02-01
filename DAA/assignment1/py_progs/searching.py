@@ -6,8 +6,8 @@ import random
 import time
 
 # Function to search using linear search
-def linear_search(arr, n, x):
-    for i in range(n):
+def linear_search(arr, x):
+    for i in range(len(arr)):
         if arr[i] == x:
             return i
     return -1
@@ -33,7 +33,7 @@ if __name__ == "__main__":
     x = arr[0]
     start = time.time()
     for i in range(10000):
-        result = linear_search(arr, n, x)
+        result = linear_search(arr, x)
     end = time.time()
     print("Best case scenario for linear search:", '{:.4f}'.format(end - start), "seconds")
 
@@ -49,7 +49,7 @@ if __name__ == "__main__":
     x = arr[(n-1)//2]
     start = time.time()
     for i in range(10000):
-        result = linear_search(arr, n, x)
+        result = linear_search(arr, x)
     end = time.time()
     print("Average case scenario for linear search:", '{:.4f}'.format(end - start), "seconds")
 
@@ -65,7 +65,7 @@ if __name__ == "__main__":
     x = arr[n-1]
     start = time.time()
     for i in range(10000):
-        result = linear_search(arr, n, x)
+        result = linear_search(arr, x)
     end = time.time()
     print("Worst case scenario for linear search:", '{:.4f}'.format(end - start), "seconds")
 

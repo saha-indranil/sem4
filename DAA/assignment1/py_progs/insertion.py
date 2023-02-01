@@ -16,7 +16,7 @@ def insertion_sort(arr):
 if __name__ == "__main__":
     n = 1000
     loops=100
-    arr = [[0] * n for _ in range(loops)]
+    arr = [[0] * n for i in range(loops)]
 
     # Best Case: Array is already sorted
     for j in range(n):
@@ -40,7 +40,7 @@ if __name__ == "__main__":
     # Worst Case: Array is sorted in reverse order
     for i in range(loops):
         for j in range(n):
-            arr[i][j] = n - j - 1
+            arr[i][j] = n - j
     start = time.time()
     for i in range(loops):
         insertion_sort(arr[i])

@@ -31,9 +31,7 @@ int main()
     // Allocating memory dynamically
     arr = (int **)malloc(loops * sizeof(int *));
     for (i = 0; i < loops; i++)
-    {
         arr[i] = (int *)malloc(n * sizeof(int));
-    }
     if (arr == NULL)
     {
         printf("Memory allocation failed\n");
@@ -65,7 +63,7 @@ int main()
     for (i = 0; i < loops; i++)
     {
         for (j = 0; j < n; j++)
-            arr[i][j] = n - j - 1;
+            arr[i][j] = n - j;
     }
     start = clock();
     for (i = 0; i < loops; i++)
@@ -74,10 +72,8 @@ int main()
     printf("Worst Case %.2f ms\n", ((double)(end - start)) * 1000 / CLOCKS_PER_SEC);
 
     // Deallocate memory
-    for (int i = 0; i < loops; i++)
-    {
+    for (i = 0; i < loops; i++)
         free(arr[i]);
-    }
     free(arr);
 
     return 0;

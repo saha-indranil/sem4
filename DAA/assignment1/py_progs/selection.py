@@ -10,13 +10,12 @@ def selection_sort(arr):
         for j in range(i+1, len(arr)):
             if arr[j] < arr[min_idx]:
                 min_idx = j
-                arr[i], arr[min_idx] = arr[min_idx], arr[i]
-    return arr
-
+        arr[i], arr[min_idx] = arr[min_idx], arr[i]
+    
 if __name__ == "__main__":
     n = 1000
     loops=100
-    arr = [[0] * n for _ in range(loops)]
+    arr = [[0] * n for i in range(loops)]
 
     # Best Case: Array is already sorted
     for j in range(n):
@@ -40,7 +39,7 @@ if __name__ == "__main__":
     # Worst Case: Array is sorted in reverse order
     for i in range(loops):
         for j in range(n):
-            arr[i][j] = n - j - 1
+            arr[i][j] = n - j
     start = time.time()
     for i in range(loops):
         selection_sort(arr[i])
@@ -48,6 +47,6 @@ if __name__ == "__main__":
     print("Worst Case: ", '{:.4f}'.format(end - start), "seconds")
 
 # OUTPUT
-# Best Case:  2.4089 seconds
-# Average Case:  2.3095 seconds
-# Worst Case:  5.0511 seconds
+# Best Case:  2.1882 seconds
+# Average Case:  2.1928 seconds
+# Worst Case:  2.3107 seconds
