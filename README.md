@@ -11,10 +11,10 @@
 
 ## OS Lab :penguin:
 
-| Day   | Assignment                                                         |
-| ----- | ------------------------------------------------------------------ |
-| Day 1 | [Day 1](./OS/day1.md)                                              |
-| Day 2 | [Day 2](./OS/day2.md) <br> [Assignment 2.1](./OS/assignment2.1.md) |
+| Day    | Assignment                                                                   |
+| ------ | ---------------------------------------------------------------------------- |
+| Week 1 | [Lab Assignment](./OS/day1.md)                                               |
+| Week 2 | [Lab Assignment](./OS/day2.md) <br> [Home Assignment](./OS/assignment2.1.md) |
 
 ---
 
