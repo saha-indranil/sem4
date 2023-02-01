@@ -1,8 +1,8 @@
-## Assignment 2.1
+## OS Home Assignment 2
 
 (use desktop view)
 
-<img src="./assignment2.jpg" width="100%" alt="file structure">
+<img src="./home2img.jpg" width="100%" alt="file structure">
 
 **$mkdir -p ROOT/{Folder1,Folder2,Folder3/{Text5,Text6},Folder4}**<br>
 **$cd ROOT**<br>

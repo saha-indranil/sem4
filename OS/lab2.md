@@ -1,4 +1,4 @@
-## OS Day 2
+## OS Lab Assignment 2
 
 (use desktop view)
 

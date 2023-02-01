@@ -1,4 +1,4 @@
-## OS Day 1
+## OS Lab Assignment 1
 
 ---
 
