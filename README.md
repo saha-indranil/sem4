@@ -20,9 +20,8 @@
 
 ## DAA Lab :trollface: :trollface:
 
-| Topic                 | Assignment                                |
-| --------------------- | ----------------------------------------- |
-| Searching and Sorting | [Assignment 1](./DAA/assignment1/ass1.md) |
+| Topic | Assignment |
+| ----- | ---------- |
 
 ---
 
