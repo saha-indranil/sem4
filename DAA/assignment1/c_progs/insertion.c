@@ -24,65 +24,54 @@ void insertion_sort(int *arr, int n)
 
 int main()
 {
-    int n = 1000, i, j, loops = 100;
+    int n = 10000, i;
     clock_t start, end;
-    int **arr;
+    int *arr;
 
     // Allocating memory dynamically
-    arr = (int **)malloc(loops * sizeof(int *));
-    for (i = 0; i < loops; i++)
-        arr[i] = (int *)malloc(n * sizeof(int));
+    arr = (int *)malloc(n * sizeof(int));
     if (arr == NULL)
     {
         printf("Memory allocation failed\n");
         return 0;
     }
+    printf("Insertion sort in C\n");
+    printf("Input size: %d\n", n);
 
     // Best Case: Array is already sorted
-    for (j = 0; j < n; j++)
-        arr[0][j] = j;
+    for (i = 0; i < n; i++)
+        arr[i] = i;
     start = clock();
-    for (i = 0; i < loops; i++)
-        insertion_sort(arr[0], n);
+    insertion_sort(arr, n);
     end = clock();
     printf("Best Case: %.2f ms\n", ((double)(end - start)) * 1000 / CLOCKS_PER_SEC);
 
     // Average Case: Array is random
-    for (i = 0; i < loops; i++)
-    {
-        for (j = 0; j < n; j++)
-            arr[i][j] = rand() % n;
-    }
+    for (i = 0; i < n; i++)
+        arr[i] = rand() % n;
     start = clock();
-    for (i = 0; i < loops; i++)
-        insertion_sort(arr[i], n);
+    insertion_sort(arr, n);
     end = clock();
     printf("Average Case: %.2f ms\n", ((double)(end - start)) * 1000 / CLOCKS_PER_SEC);
 
     // Worst Case: Array is sorted in reverse order
-    for (i = 0; i < loops; i++)
-    {
-        for (j = 0; j < n; j++)
-            arr[i][j] = n - j;
-    }
+    for (i = 0; i < n; i++)
+        arr[i] = n - i;
     start = clock();
-    for (i = 0; i < loops; i++)
-        insertion_sort(arr[i], n);
+    insertion_sort(arr, n);
     end = clock();
     printf("Worst Case %.2f ms\n", ((double)(end - start)) * 1000 / CLOCKS_PER_SEC);
 
-    // Deallocate memory
-    for (i = 0; i < loops; i++)
-        free(arr[i]);
     free(arr);
-
     return 0;
 }
 
 // OUTPUT
+// Insertion sort in C
+// Input size: 10000
 // Best Case: 0.00 ms
-// Average Case: 64.00 ms
-// Worst Case 129.00 ms
+// Average Case: 73.00 ms
+// Worst Case 126.00 ms
 
 // The expected time complexity of insertion sort is O(n^2)
 // in the worst case, where n is the number of elements in the array.

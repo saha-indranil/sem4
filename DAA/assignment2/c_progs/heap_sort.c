@@ -1,31 +1,53 @@
-// Write a C program to perform selection sort using dynamic memory allocation.
-// Show the running time complexity w.r.t different input cases. Finally comment
-// that whether it is matching with the expected complexity of O(n^2) or not.
+// Write a C program to sort a list of element in an Array using Heap Sort.
+// Show the running time complexity w.r.t different input cases (best/average/worst).
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
-void selection_sort(int *arr, int n)
+void swap(int *a, int *b)
 {
-    int i, j, min_idx;
-    for (i = 0; i < n - 1; i++)
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+void heapify(int *arr, int n, int i)
+{
+    int largest = i;
+    int left = 2 * i + 1;
+    int right = 2 * i + 2;
+
+    if (left < n && arr[left] > arr[largest])
+        largest = left;
+
+    if (right < n && arr[right] > arr[largest])
+        largest = right;
+
+    if (largest != i)
     {
-        min_idx = i;
-        for (j = i + 1; j < n; j++)
-        {
-            if (arr[j] < arr[min_idx])
-                min_idx = j;
-        }
-        int temp = arr[min_idx];
-        arr[min_idx] = arr[i];
-        arr[i] = temp;
+        swap(&arr[i], &arr[largest]);
+
+        heapify(arr, n, largest);
+    }
+}
+
+void heap_sort(int *arr, int n)
+{
+    for (int i = n / 2 - 1; i >= 0; i--)
+        heapify(arr, n, i);
+
+    for (int i = n - 1; i >= 0; i--)
+    {
+        swap(&arr[0], &arr[i]);
+
+        heapify(arr, i, 0);
     }
 }
 
 int main()
 {
-    int n = 10000, i;
+    int n = 1000000, i;
     clock_t start, end;
     int *arr;
 
@@ -36,14 +58,14 @@ int main()
         printf("Memory allocation failed\n");
         return 0;
     }
-    printf("Selection sort in C\n");
+    printf("Heap sort in C\n");
     printf("Input size: %d\n", n);
 
     // Best Case: Array is already sorted
     for (i = 0; i < n; i++)
         arr[i] = i;
     start = clock();
-    selection_sort(arr, n);
+    heap_sort(arr, n);
     end = clock();
     printf("Best Case: %.2f ms\n", ((double)(end - start)) * 1000 / CLOCKS_PER_SEC);
 
@@ -51,7 +73,7 @@ int main()
     for (i = 0; i < n; i++)
         arr[i] = rand() % n;
     start = clock();
-    selection_sort(arr, n);
+    heap_sort(arr, n);
     end = clock();
     printf("Average Case: %.2f ms\n", ((double)(end - start)) * 1000 / CLOCKS_PER_SEC);
 
@@ -59,7 +81,7 @@ int main()
     for (i = 0; i < n; i++)
         arr[i] = n - i;
     start = clock();
-    selection_sort(arr, n);
+    heap_sort(arr, n);
     end = clock();
     printf("Worst Case %.2f ms\n", ((double)(end - start)) * 1000 / CLOCKS_PER_SEC);
 
@@ -68,12 +90,8 @@ int main()
 }
 
 // OUTPUT
-// Selection sort in C
-// Input size: 10000
-// Best Case: 128.00 ms
-// Average Case: 121.00 ms
-// Worst Case 103.00 ms
-
-// In this case, the algorithm needs to make n-1 passes through the array to sort it,
-// but each pass takes O(n) time. Thus the time complexity of selection sort is O(n^2)
-// in all the three cases: best, average and worst.
+// Heap sort in C
+// Input size: 1000000
+// Best Case: 255.00 ms
+// Average Case: 340.00 ms
+// Worst Case 243.00 ms

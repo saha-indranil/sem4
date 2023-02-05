@@ -25,6 +25,7 @@
 | Topic                 | Assignments                               |
 | --------------------- | ----------------------------------------- |
 | Searching and Sorting | [Assignment 1](./DAA/assignment1/ass1.md) |
+| Divide & Conquer I    | [Assignment 2](./DAA/assignment2/ass2.md) |
 
 ---
 

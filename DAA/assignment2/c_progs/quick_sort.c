@@ -1,25 +1,42 @@
-// Write a C program to perform selection sort using dynamic memory allocation.
-// Show the running time complexity w.r.t different input cases. Finally comment
-// that whether it is matching with the expected complexity of O(n^2) or not.
+// Write a C program to sort a list of element in an Array using Quick Sort.
+// Show the running time complexity w.r.t different input cases (best/average/worst).
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
-void selection_sort(int *arr, int n)
+void swap(int *a, int *b)
 {
-    int i, j, min_idx;
-    for (i = 0; i < n - 1; i++)
+    int t = *a;
+    *a = *b;
+    *b = t;
+}
+
+int partition(int *arr, int low, int high)
+{
+    int pivot = arr[high];
+    int i = (low - 1);
+
+    for (int j = low; j <= high - 1; j++)
     {
-        min_idx = i;
-        for (j = i + 1; j < n; j++)
+        if (arr[j] < pivot)
         {
-            if (arr[j] < arr[min_idx])
-                min_idx = j;
+            i++;
+            swap(&arr[i], &arr[j]);
         }
-        int temp = arr[min_idx];
-        arr[min_idx] = arr[i];
-        arr[i] = temp;
+    }
+    swap(&arr[i + 1], &arr[high]);
+    return (i + 1);
+}
+
+void quick_sort(int *arr, int low, int high)
+{
+    if (low < high)
+    {
+        int pi = partition(arr, low, high);
+
+        quick_sort(arr, low, pi - 1);
+        quick_sort(arr, pi + 1, high);
     }
 }
 
@@ -36,22 +53,22 @@ int main()
         printf("Memory allocation failed\n");
         return 0;
     }
-    printf("Selection sort in C\n");
+    printf("Quick sort in C\n");
     printf("Input size: %d\n", n);
 
     // Best Case: Array is already sorted
     for (i = 0; i < n; i++)
         arr[i] = i;
     start = clock();
-    selection_sort(arr, n);
+    quick_sort(arr, 0, n - 1);
     end = clock();
     printf("Best Case: %.2f ms\n", ((double)(end - start)) * 1000 / CLOCKS_PER_SEC);
 
     // Average Case: Array is random
     for (i = 0; i < n; i++)
-        arr[i] = rand() % n;
+        arr[i] = rand() % (n * 10);
     start = clock();
-    selection_sort(arr, n);
+    quick_sort(arr, 0, n - 1);
     end = clock();
     printf("Average Case: %.2f ms\n", ((double)(end - start)) * 1000 / CLOCKS_PER_SEC);
 
@@ -59,7 +76,7 @@ int main()
     for (i = 0; i < n; i++)
         arr[i] = n - i;
     start = clock();
-    selection_sort(arr, n);
+    quick_sort(arr, 0, n - 1);
     end = clock();
     printf("Worst Case %.2f ms\n", ((double)(end - start)) * 1000 / CLOCKS_PER_SEC);
 
@@ -68,12 +85,8 @@ int main()
 }
 
 // OUTPUT
-// Selection sort in C
+// Quick sort in C
 // Input size: 10000
-// Best Case: 128.00 ms
-// Average Case: 121.00 ms
-// Worst Case 103.00 ms
-
-// In this case, the algorithm needs to make n-1 passes through the array to sort it,
-// but each pass takes O(n) time. Thus the time complexity of selection sort is O(n^2)
-// in all the three cases: best, average and worst.
+// Best Case: 251.00 ms
+// Average Case: 3.00 ms
+// Worst Case 193.00 ms

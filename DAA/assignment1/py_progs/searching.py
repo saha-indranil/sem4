@@ -77,10 +77,12 @@ if __name__ == "__main__":
     end = time.time()
     print("Worst case scenario for binary search:", '{:.4f}'.format(end - start), "seconds")
 
-# OUTPUT  
-# Best case scenario for linear search: 0.0042 seconds
-# Best case scenario for binary search: 0.0166 seconds
-# Average case scenario for linear search: 0.1678 seconds
-# Average case scenario for binary search: 0.0317 seconds
-# Worst case scenario for linear search: 0.3382 seconds
-# Worst case scenario for binary search: 0.0261 seconds
+    arr.clear()
+
+# OUTPUT
+# Best case scenario for linear search: 0.0036 seconds
+# Best case scenario for binary search: 0.0139 seconds
+# Average case scenario for linear search: 0.1908 seconds
+# Average case scenario for binary search: 0.0232 seconds
+# Worst case scenario for linear search: 0.3690 seconds
+# Worst case scenario for binary search: 0.0260 seconds

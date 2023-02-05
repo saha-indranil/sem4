@@ -12,40 +12,41 @@ def bubble_sort(arr):
                 arr[j], arr[j+1] = arr[j+1], arr[j]
 
 if __name__ == "__main__":
-    n = 1000
-    loops=100
-    arr = [[0] * n for i in range(loops)]
+    n = 5000
+    arr = []
+    print("Bubble Sort in Python")
+    print("Input size:", n)
 
     # Best Case: Array is already sorted
-    for j in range(n):
-        arr[0][j] = j
+    for i in range(n):
+        arr.append(i) 
     start = time.time()
-    for i in range(loops):
-        bubble_sort(arr[0])
+    bubble_sort(arr)
     end = time.time()
-    print("Best Case: ", '{:.4f}'.format(end - start), "seconds")
+    print("Best Case:", '{:.4f}'.format(end - start), "seconds")
+    arr.clear()
 
     # Average Case: Array is random
-    for i in range(loops):
-        for j in range(n):
-            arr[i][j] = random.randint(0, n)
+    for i in range(n):
+        arr.append(random.randint(0, n))
     start = time.time()
-    for i in range(loops):
-        bubble_sort(arr[i])
+    bubble_sort(arr)
     end = time.time()
-    print("Average Case: ", '{:.4f}'.format(end - start), "seconds")
+    print("Average Case:", '{:.4f}'.format(end - start), "seconds")
+    arr.clear()
 
     # Worst Case: Array is sorted in reverse order
-    for i in range(loops):
-        for j in range(n):
-            arr[i][j] = n - j
+    for i in range(n):
+        arr.append(n-i)
     start = time.time()
-    for i in range(loops):
-        bubble_sort(arr[i])
+    bubble_sort(arr)
     end = time.time()
-    print("Worst Case: ", '{:.4f}'.format(end - start), "seconds")
+    print("Worst Case:", '{:.4f}'.format(end - start), "seconds")
+    arr.clear()
 
 # OUTPUT
-# Best Case:  2.8415 seconds
-# Average Case:  5.2462 seconds
-# Worst Case:  7.0989 seconds
+# Bubble Sort in Python
+# Input size: 5000
+# Best Case: 0.7112 seconds
+# Average Case: 1.2552 seconds
+# Worst Case: 1.6796 seconds

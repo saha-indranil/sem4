@@ -1,6 +1,6 @@
 ## DAA Assignment 1 :shipit:
 
-:question: [Question Link](https://drive.google.com/file/d/11GANDm_Bbq0JlPHJE0Pi-peHiYmbMlee/view?usp=drivesdk)
+:question: [Question Link](https://drive.google.com/file/d/1SKvDe8jgySiOxUjLt8G6e-yr7ajdNLxd/view?usp=share_link)
 
 | No. | C :godmode:                        | Python :snake:                       |
 | --- | ---------------------------------- | ------------------------------------ |
