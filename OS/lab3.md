@@ -43,3 +43,45 @@ sort -t: -k4,4 -k3,3n /etc/passwd
 _h) list from etc/passwd the UID and the user having the highest UID_<br>
 
 awk -F: '{print $3, $1}' /etc/passwd | sort -n -r | head -1
+
+---
+
+_i) device a sequence which lists the 5 largest files in the current directory_<br>
+
+ls -lS | head -5
+
+---
+
+_j)remove duplicate lines from a file_<br>
+
+sort file.txt | uniq > file_unique.txt
+
+---
+
+_k)count the frequency of occurences of words in a file_<br>
+
+grep -oE '[a-zA-Z]+' file.txt | sort | uniq -c | sort -nr
+
+---
+
+  _l)find "long" listing of the smallest 5 files in the /etc directory whose name contains the string ".conf", sorted by increasing file size_<br>
+
+find /etc -type f -name "*.conf" -ls | sort -k7 | head -n 5
+
+---
+
+_m)get a sorted list, with no duplicates, of all the users logged into the logged network_<br>
+
+who | cut -d' ' -f1 | sort | uniq
+
+---
+
+_n)find all files in your home directory that are more than a week old and end with .bak_<br>
+
+find ~ -type f -name "*.bak" -mtime +7
+
+---
+
+_o)how many total lines are contained in all the files ending in .c in the current directory, printing only the total number of lines_<br>
+
+find . -name "*.c" -exec wc -l {} + | tail -n1 | awk '{print $1}'
