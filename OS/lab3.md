@@ -12,7 +12,9 @@ who | sort | tee >(wc -l | awk '{print $1 " users"}' > file1)
 
 _c) double space a file_<br>
 
-who | sort | tee >(wc -l | awk '{print $1 " users"}' > file1)
+sed G filename > outputfile
+
+
 
 ---
 
