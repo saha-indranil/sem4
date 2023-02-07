@@ -77,7 +77,7 @@ int main()
 
     // Average Case: Array is random
     for (i = 0; i < n; i++)
-        arr[i] = rand() % n;
+        arr[i] = rand() % (n * 10);
     start = clock();
     merge_sort(arr, 0, n - 1);
     end = clock();

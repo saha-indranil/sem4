@@ -71,7 +71,7 @@ int main()
 
     // Average Case: Array is random
     for (i = 0; i < n; i++)
-        arr[i] = rand() % n;
+        arr[i] = rand() % (n * 10);
     start = clock();
     heap_sort(arr, n);
     end = clock();
