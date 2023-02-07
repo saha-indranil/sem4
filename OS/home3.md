@@ -230,11 +230,11 @@ _8. Write a shell script which will take a filename as input and apply READ & EX
 ```bash
 #!/bin/bash
 
-if [ $# -ne 1 ]; then
-  echo "Usage: $0 <filename>"
+filename=$1
+if [ ! -e $filename ]; then
+  echo "Error: file $filename does not exist."
   exit 1
 fi
-filename=$1
-$ chmod 750 $filename
-
+chmod 550 $filename
+echo "Success: READ and EXECUTE permissions added for owner and group on $filename"
 ```
