@@ -4,20 +4,35 @@
 
 <img src="./home2img.jpg" width="100%" alt="file structure">
 
-**$mkdir -p ROOT/{Folder1,Folder2,Folder3/{Text5,Text6},Folder4}**<br>
-**$cd ROOT**<br>
-**$touch Folder1/{Text1.txt,Text2.txt} Folder2/{Text3.txt,Text4.txt} Folder4/{Text7.txt,Text8.txt}**<br>
-**$cd Folder1**<br>
-**$cat>Text1.txt**<br>
-**who<br>who -a<br>tty<br>ctrl+z<br>**
-**$cat>Text2.txt**<br>
-**name: dogesh<br>sec: a<br>roll: 100<br>ctrl+z<br>**
-**$cd ../Folder2**<br>
-**$cat>Text3.txt**<br>
-**man who<br>ctrl+z<br>**
-**$cat>Text4.txt**<br>
-**tty<br>w<br>ctrl+z<br>**
-**$cd ..**
+```bash
+$mkdir -p ROOT/{Folder1,Folder2,Folder3/{Text5,Text6},Folder4}
+$cd ROOT
+$touch Folder1/{Text1.txt,Text2.txt} Folder2/{Text3.txt,Text4.txt} Folder4/{Text7.txt,Text8.txt}
+$cd Folder1
+$cat>Text1.txt
+who
+who -a
+tty
+ctrl+z
+
+$cat>Text2.txt
+name: dogesh
+sec: a
+roll: 100
+ctrl+z
+
+$cd ../Folder2
+$cat>Text3.txt
+man who
+ctrl+z
+
+$cat>Text4.txt
+tty
+w
+ctrl+z
+
+$cd ..
+```
 
 ---
 
