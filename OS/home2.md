@@ -5,33 +5,29 @@
 <img src="./home2img.jpg" width="100%" alt="file structure">
 
 ```bash
-$mkdir -p ROOT/{Folder1,Folder2,Folder3/{Text5,Text6},Folder4}
-$cd ROOT
-$touch Folder1/{Text1.txt,Text2.txt} Folder2/{Text3.txt,Text4.txt} Folder4/{Text7.txt,Text8.txt}
-$cd Folder1
-$cat>Text1.txt
-who
-who -a
-tty
+mkdir -p ROOT/{Folder1,Folder2,Folder3/{Text5,Text6},Folder4}
+cd ROOT
+touch Folder1/{Text1.txt,Text2.txt} Folder2/{Text3.txt,Text4.txt} Folder4/{Text7.txt,Text8.txt}
+cd Folder1
+cat>Text1.txt
+    who
+    who -a
+    tty
+    ctrl+z
+cat>Text2.txt
+    name: dogesh
+    sec: a
+    roll: 100
+    ctrl+z
+cd ../Folder2
+cat>Text3.txt
+    man who
+    ctrl+z
+cat>Text4.txt
+    tty
+    w
 ctrl+z
-
-$cat>Text2.txt
-name: dogesh
-sec: a
-roll: 100
-ctrl+z
-
-$cd ../Folder2
-$cat>Text3.txt
-man who
-ctrl+z
-
-$cat>Text4.txt
-tty
-w
-ctrl+z
-
-$cd ..
+cd ..
 ```
 
 ---
