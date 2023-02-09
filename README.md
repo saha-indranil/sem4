@@ -33,6 +33,6 @@
 
 ## COA Lab :zero: :one:
 
-| Hardware                                                                                               | Software                         |
-| ------------------------------------------------------------------------------------------------------ | -------------------------------- |
-| [Shift Registers](https://drive.google.com/file/d/11cb8rPVw17eLTPiN5-_xJglYm9hL7dhI/view?usp=drivesdk) | [Basic Gates](./COA/basic_gates) |
+| Hardware                                                                                               | Software                                                                                                                                  |
+| ------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| [Shift Registers](https://drive.google.com/file/d/11cb8rPVw17eLTPiN5-_xJglYm9hL7dhI/view?usp=drivesdk) | [Basic Gates](./COA/basic_gates) <br> [Output PDF](https://drive.google.com/file/d/1mDPJ4xHWuDJwQdG7hmrQf6GTFcGvh91_/view?usp=share_link) |
