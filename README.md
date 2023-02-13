@@ -27,10 +27,11 @@
 
 :question: [Question Link](https://drive.google.com/file/d/1SKvDe8jgySiOxUjLt8G6e-yr7ajdNLxd/view?usp=share_link)
 
-| Topic                 | Assignments                               |
-| --------------------- | ----------------------------------------- |
-| Searching and Sorting | [Assignment 1](./DAA/assignment1/ass1.md) |
-| Divide & Conquer I    | [Assignment 2](./DAA/assignment2/ass2.md) |
+| Topic                 | Assignments                                 |
+| --------------------- | ------------------------------------------- |
+| Searching and Sorting | [Assignment 1](./DAA/assignment1/readme.md) |
+| Divide & Conquer I    | [Assignment 2](./DAA/assignment2/readme.md) |
+| Divide & Conquer II   | [Assignment 3](./DAA/assignment3/readme.md) |
 
 ---
 
@@ -39,3 +40,11 @@
 | Hardware                                                                                               | Software                                                                                                                                  |
 | ------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | [Shift Registers](https://drive.google.com/file/d/11cb8rPVw17eLTPiN5-_xJglYm9hL7dhI/view?usp=drivesdk) | [Basic Gates](./COA/basic_gates) <br> [Output PDF](https://drive.google.com/file/d/1mDPJ4xHWuDJwQdG7hmrQf6GTFcGvh91_/view?usp=share_link) |
+
+---
+
+## Organizational Behaviour :merman:
+
+| No. | Assignment                                |
+| --- | ----------------------------------------- |
+| #1  | [Assignment 1](./OrgBehav/assignment1.md) |
