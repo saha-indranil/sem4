@@ -21,6 +21,7 @@
 | Week 2 | [Lab Assignment 2](./OS/lab2.md) <br> [Home Assignment 2](./OS/home2.md) |
 | Week 3 | [Lab Assignment 3](./OS/lab3.md) <br> [Home Assignment 3](./OS/home3.md) |
 | Week 4 | [Lab Assignment 4](./OS/lab4.md)                                         |
+| Week 5 | [Lab Assignment 5](./OS/lab5.md) <br> [Home Assignment 5](./OS/home5.md) |
 
 ---
 
