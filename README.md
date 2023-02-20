@@ -2,13 +2,12 @@
 
 ## AIML Lab :brain:
 
-| No. | Assignment                                   |
-| --- | -------------------------------------------- |
-| #1  | [Assignment 1](./AIML/assignment1/family.pl) |
-| #2  | [Assignment 2](./AIML/assignment2)           |
-| #3  | [Assignment 3](./AIML/assignment3)  <br> [Assigment 3 iot](./AIML/assignment3/Assignment 3- Aiml(IOT).txt)        |
-| #4  | [Assignment 4](./AIML/assignment4)           |
-
+| No. | Assignment                                                                                                  |
+| --- | ----------------------------------------------------------------------------------------------------------- |
+| #1  | [Assignment 1](./AIML/assignment1/family.pl)                                                                |
+| #2  | [Assignment 2](./AIML/assignment2)                                                                          |
+| #3  | [Assignment 3](./AIML/assignment3) <br> [For CSE-IOT](<./AIML/assignment3/Assignment%203-%20Aiml(IOT).txt>) |
+| #4  | [Assignment 4](./AIML/assignment4)                                                                          |
 
 ---
 
