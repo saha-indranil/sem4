@@ -2,7 +2,7 @@
 
 ---
 
-*1) shell script to find the factorial value of any integer entered through the keyboard.*
+_1) shell script to find the factorial value of any integer entered through the keyboard._
 
 ```bash
 #!/bin/bash
@@ -22,7 +22,7 @@ echo "The factorial of $num is: $fact"
 
 ---
 
-*2) to generate all combinations of 1, 2 and 3.*
+_2) to generate all combinations of 1, 2 and 3._
 
 ```bash
 #!/bin/bash
@@ -42,7 +42,7 @@ done
 
 ---
 
-*3) print all prime numbers in a given range.*
+_3) print all prime numbers in a given range._
 
 ```bash
 #!/bin/bash
@@ -75,7 +75,7 @@ done
 
 ---
 
-*4) to calculate the sum of digits of any number entered through keyboard.*
+_4) to calculate the sum of digits of any number entered through keyboard._
 
 ```bash
 #!/bin/bash
@@ -97,9 +97,8 @@ echo "The sum of digits is: $sum"
 
 ---
 
-*5) Rajesh's basic salary (BASIC) is input through the keyboard. His dearness allowance (DA) is 52% of BASIC. House rent allowance (HRA) is 15% of BASIC. Contributory provident fund is 12% of (BASIC + DA). Write a shell script to calculate his gross salary and take home salary using the following formula:
-
-Gross salary = BASIC + DA + HRA.*
+_5) Rajesh's basic salary (BASIC) is input through the keyboard. His dearness allowance (DA) is 52% of BASIC. House rent allowance (HRA) is 15% of BASIC. Contributory provident fund is 12% of (BASIC + DA). Write a shell script to calculate his gross salary and take home salary using the following formula:_
+_Gross salary = BASIC + DA + HRA._
 
 ```bash
 #!/bin/bash

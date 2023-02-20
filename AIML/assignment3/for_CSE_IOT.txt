@@ -1,0 +1,69 @@
+                  ASSignment 3
+
+1.	 Write a SWI prolog programme to calculate the factorial of a given number
+-	Fact (0,1)
+Fact(N F):-
+
+N > 0,
+N1 => N-1 ,
+FACT()
+F 1 => N*f1 .
+
+OUTPUT:-
+
+FACT (5, 120)
+TRUE
+FACT(4, 120)
+FALSE
+
+
+2 . WRITE A Swi prolog programme to calculate additition, product, difference and division operations on any two given numbers.
+=> sum (a, b, c):-
+  C is a + b .
+Mult (x , y, z):-
+  Z is X * Y .
+Sumtest (p, g, r):-
+  P > 0 :
+  G > 0:
+R= P + G .
+Diff(a, b, c):
+  C is A-b .
+Div (p, g, r):-
+  R is p/g.
+
+OUTPUT:-
+  Sum(20, 67 , U).
+ U= 87
+ Sumtest(90, -8, r) .
+ False
+Diff (45, 25 , e)
+E=20
+True 
+Div (34, 17, r)
+R = 2
+
+3. write a prolog programme to calculate the Fibonacci series.
+=>  fibo (0 , 1) :- 1 .
+    Fibo(1, 1 ) :- 1.
+    Fibo(n , f ) :-
+        n> 1,
+       n1 is (n-1) ,
+       n2 is (n-2) ,
+       fib (n1, f2) ,
+
+OUTPUT:-
+  FIB (5 , F)
+  F = 8
+
+
+4. WRITE A SWI PROLOG PROGRAMME TO CALCULATE THE SUMMATION OF N was whre value of n = 10 or may be taken from useror input
+
+=> sum(a, c) :-
+   C is (a * (a + 1) / 2) .
+
+Output:-
+  Sum (5, c)
+  C= 15
+
+
+
