@@ -14,4 +14,4 @@ end xnorgate;
 architecture xnorlogic of xnorgate is
 begin
     Y<=not(A xor B xor C);
-end xnorlogic;
+end xnorlogic;

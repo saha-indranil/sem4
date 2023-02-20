@@ -6,8 +6,9 @@
 | --- | -------------------------------------------- |
 | #1  | [Assignment 1](./AIML/assignment1/family.pl) |
 | #2  | [Assignment 2](./AIML/assignment2)           |
-| #3  | [Assignment 3](./AIML/assignment3)           |  
-| #3.1    |[Assigment 3 iot](./AIML/assignment3/Assignment 3- Aiml(IOT).txt)   |
+| #3  | [Assignment 3](./AIML/assignment3)  <br> [Assigment 3 iot](./AIML/assignment3/Assignment 3- Aiml(IOT).txt)        |
+| #4  | [Assignment 4](./AIML/assignment4)           |
+
 
 ---
 
@@ -28,19 +29,20 @@
 
 :question: [Question Link](https://drive.google.com/file/d/1SKvDe8jgySiOxUjLt8G6e-yr7ajdNLxd/view?usp=share_link)
 
-| Topic                 | Assignments                                 |
-| --------------------- | ------------------------------------------- |
-| Searching and Sorting | [Assignment 1](./DAA/assignment1/readme.md) |
-| Divide & Conquer I    | [Assignment 2](./DAA/assignment2/readme.md) |
-| Divide & Conquer II   | [Assignment 3](./DAA/assignment3/readme.md) |
+| Topic                 | Assignments                        |
+| --------------------- | ---------------------------------- |
+| Searching and Sorting | [Assignment 1](./DAA/assignment1/) |
+| Divide & Conquer I    | [Assignment 2](./DAA/assignment2/) |
+| Divide & Conquer II   | [Assignment 3](./DAA/assignment3/) |
 
 ---
 
 ## COA Lab :zero: :one:
 
-| Hardware                                                                                               | Software                                                                                                                                  |
-| ------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| [Shift Registers](https://drive.google.com/file/d/11cb8rPVw17eLTPiN5-_xJglYm9hL7dhI/view?usp=drivesdk) | [Basic Gates](./COA/basic_gates) <br> [Output PDF](https://drive.google.com/file/d/1mDPJ4xHWuDJwQdG7hmrQf6GTFcGvh91_/view?usp=share_link) |
+| Hardware                                                                                                            | Software                                      |
+| ------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- |
+| [Shift Registers](https://drive.google.com/file/d/11cb8rPVw17eLTPiN5-_xJglYm9hL7dhI/view?usp=drivesdk)              | [Basic Gates](./COA/basic_gates/)             |
+| [Composite Adder-Subtractor](https://drive.google.com/file/d/1BzE1bD-5IZCuFdgcreYjnneT7GK0JuEF/view?usp=share_link) | [Adder & Subtractor](./COA/adder_subtractor/) |
 
 ---
 
