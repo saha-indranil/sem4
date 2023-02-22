@@ -8,6 +8,7 @@
 | #2  | [Assignment 2](./AIML/assignment2)           |
 | #3  | [Assignment 3](./AIML/assignment3)           |
 | #4  | [Assignment 4](./AIML/assignment4)           |
+| #5  | [Assignment 5](./AIML/assignment5)           |
 
 ---
 
@@ -15,13 +16,14 @@
 
 :question: [Question Link](https://drive.google.com/file/d/15o1MAmkMAReHyUHMT7VpRWZTr7DARHP_/view?usp=drivesdk)
 
-| Week   | Assignments                                                              |
-| ------ | ------------------------------------------------------------------------ |
-| Week 1 | [Lab Assignment 1](./OS/lab1.md)                                         |
-| Week 2 | [Lab Assignment 2](./OS/lab2.md) <br> [Home Assignment 2](./OS/home2.md) |
-| Week 3 | [Lab Assignment 3](./OS/lab3.md) <br> [Home Assignment 3](./OS/home3.md) |
-| Week 4 | [Lab Assignment 4](./OS/lab4.md)                                         |
-| Week 5 | [Lab Assignment 5](./OS/lab5.md) <br> [Home Assignment 5](./OS/home5.md) |
+| Week   | Assignments                                                                                      |
+| ------ | ------------------------------------------------------------------------------------------------ |
+| Week 1 | [Lab Assignment 1](./OS/assignment1/lab1.md)                                                     |
+| Week 2 | [Lab Assignment 2](./OS/assignment2/lab2.md) <br> [Home Assignment 2](./OS/assignment2/home2.md) |
+| Week 3 | [Lab Assignment 3](./OS/assignment3/lab3.md) <br> [Home Assignment 3](./OS/assignment3/home3.md) |
+| Week 4 | [Lab Assignment 4](./OS/assignment4/lab4.md)                                                     |
+| Week 5 | [Lab Assignment 5](./OS/assignment5/lab5.md) <br> [Home Assignment 5](./OS/assignment5/home5.md) |
+| Week 6 | [Lab Assignment 6](./OS/assignment6/lab6.md) <br> [Home Assignment 5](./OS/assignment6/home6.md) |
 
 ---
 
