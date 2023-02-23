@@ -2,7 +2,7 @@
 
 ---
 
-*1) write a shell script to find out whether an integer input the keyboard is an odd number or an even number*
+_1) Write a shell script to find out whether an integer input the keyboard is an odd number or an even number._
 
 ```bash
 #!/bin/bash
@@ -15,30 +15,33 @@ if [ $((num % 2)) -eq 0 ]; then
 else
   echo "$num is an odd number."
 fi
-
 ```
 
 ---
 
-*2) whether any year input through the keyboard is a leap year or not.*
+_2) Write a shell script to find out whether any year input through the keyboard is a leap year or not. If no argument is supplied the current year should be assumed._
 
 ```bash
 #!/bin/bash
 
-echo "Enter a year:"
-read year
-
-if [ $((year % 4)) -eq 0 ] && [ $((year % 100)) -ne 0 ] || [ $((year % 400)) -eq 0 ]; then
-  echo "$year is a leap year."
+if [ -z "$1" ]
+then
+    year=$(date +"%Y")
 else
-  echo "$year is not a leap year."
+    year=$1
 fi
 
+if (( year % 4 == 0 && year % 100 != 0 || year % 400 == 0 ))
+then
+    echo "$year is a leap year"
+else
+    echo "$year is not a leap year"
+fi
 ```
 
 ---
 
-*3) find the maximum of three numbers provided as command line arguments.*
+_3) Write a shell script to find the maximum of three numbers provided as command line arguments._
 
 ```bash
 #!/bin/bash
@@ -59,12 +62,11 @@ elif [ $num2 -ge $num1 ] && [ $num2 -ge $num3 ]; then
 else
   echo "Maximum number is: $num3"
 fi
-
 ```
 
 ---
 
-*4) to check whether a given number is prime or not.*
+_4) Write a shell script to check whether a given number is prime or not._
 
 ```bash
 #!/bin/bash
@@ -86,5 +88,4 @@ do
 done
 
 echo "$num is a prime number."
-
 ```

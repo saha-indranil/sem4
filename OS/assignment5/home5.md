@@ -2,7 +2,7 @@
 
 ---
 
-_1) shell script to find the factorial value of any integer entered through the keyboard._
+_1) Write a shell script to find the factorial value of any integer entered through the keyboard._
 
 ```bash
 #!/bin/bash
@@ -17,12 +17,11 @@ do
 done
 
 echo "The factorial of $num is: $fact"
-
 ```
 
 ---
 
-_2) to generate all combinations of 1, 2 and 3._
+_2) Write a shell script to generate all combinations of 1, 2 and 3._
 
 ```bash
 #!/bin/bash
@@ -37,12 +36,11 @@ do
     done
   done
 done
-
 ```
 
 ---
 
-_3) print all prime numbers in a given range._
+_3) Write a shell script to print all prime numbers in a given range._
 
 ```bash
 #!/bin/bash
@@ -70,12 +68,11 @@ do
     echo $i
   fi
 done
-
 ```
 
 ---
 
-_4) to calculate the sum of digits of any number entered through keyboard._
+_4) Write a shell script to calculate the sum of digits of any number entered through keyboard._
 
 ```bash
 #!/bin/bash
@@ -92,7 +89,6 @@ do
 done
 
 echo "The sum of digits is: $sum"
-
 ```
 
 ---
@@ -114,7 +110,6 @@ TAKE_HOME=$((GROSS - CPF))
 
 echo "Rajesh's gross salary is: $GROSS"
 echo "Rajesh's take home salary is: $TAKE_HOME"
-
 ```
 
 ---
