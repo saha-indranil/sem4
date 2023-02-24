@@ -1,11 +1,11 @@
 # UEM 4th Sem
 
-Go to :arrow_right: [AIML Lab :brain:](#aiml-lab-🧠) <br>
-Go to :arrow_right: [OS Lab :penguin:](#os-lab-🐧) <br>
+Go to :arrow_right: [AIML Lab :brain:](#aiml-lab-brain) <br>
+Go to :arrow_right: [OS Lab :penguin:](#os-lab-penguin) <br>
 Go to :arrow_right: [DAA Lab :trollface:](#daa-lab-trollface) <br>
-Go to :arrow_right: [COA Lab :zero: :one:](#coa-lab-0️⃣1️⃣) <br>
-Go to :arrow_right: [Organizational Behavior :briefcase:](#organizational-behavior-💼) <br>
-Go to :arrow_right: [Study Materials :books:](#study-materials-📚)
+Go to :arrow_right: [COA Lab :zero: :one:](#coa-lab-zeroone) <br>
+Go to :arrow_right: [Organizational Behavior :briefcase:](#organizational-behavior-briefcase) <br>
+Go to :arrow_right: [Study Materials :books:](#study-materials-books)
 
 ---
 
