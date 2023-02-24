@@ -1,5 +1,14 @@
 # UEM 4th Sem
 
+Go to :arrow_right: [AIML Lab :brain:](#aiml-lab-🧠) <br>
+Go to :arrow_right: [OS Lab :penguin:](#os-lab-🐧) <br>
+Go to :arrow_right: [DAA Lab :trollface:](#daa-lab-trollface) <br>
+Go to :arrow_right: [COA Lab :zero: :one:](#coa-lab-0️⃣1️⃣) <br>
+Go to :arrow_right: [Organizational Behavior :briefcase:](#organizational-behavior-💼) <br>
+Go to :arrow_right: [Study Materials :books:](#study-materials-📚)
+
+---
+
 ## AIML Lab :brain:
 
 | No. | Assignment                                   |
@@ -27,7 +36,7 @@
 
 ---
 
-## DAA Lab :trollface: :trollface:
+## DAA Lab :trollface:
 
 :question: [Question Link](https://drive.google.com/file/d/1SKvDe8jgySiOxUjLt8G6e-yr7ajdNLxd/view?usp=share_link)
 
@@ -41,7 +50,7 @@
 
 ---
 
-## COA Lab :zero: :one:
+## COA Lab :zero::one:
 
 | Hardware                                                                                                            | Software                                      |
 | ------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- |
@@ -50,8 +59,21 @@
 
 ---
 
-## Organizational Behaviour :merman:
+## Organizational Behavior :briefcase:
 
 | No. | Assignment                                |
 | --- | ----------------------------------------- |
 | #1  | [Assignment 1](./OrgBehav/assignment1.md) |
+
+---
+
+## Study Materials :books:
+
+- [ESP IV](https://drive.google.com/drive/folders/1vQo0cq_sHx6SghQjGW_YZTHeySxcNVHc?usp=share_link)
+- [Environmental Sciences](https://drive.google.com/drive/folders/1-__DgfY-MwTaoyxFDN2RI1L8iHkRibsB?usp=share_link)
+- [Organizational Behavior](https://drive.google.com/drive/folders/1lzAaGkzRAc3y58SlpB09CezFj___q_EY?usp=share_link)
+- [Discrete Mathematics](https://drive.google.com/drive/folders/1oR7jzT5vrKZpYrcmbpDN1R5kwsJph-2t?usp=share_link)
+- [Artificial Intelligence & Machine Learning](https://drive.google.com/drive/folders/1WktcDGmhf5h0XcEJI74aFnvt3LDQ0O8F?usp=share_link)
+- [Design & Analysis of Algorithms](https://drive.google.com/drive/folders/1SyUtJOjIPBFJMwx8zJAZ0Xjaf6eRjApg?usp=share_link)
+- [Operating Systems](https://drive.google.com/drive/folders/1AKfa7NIr2bvKNWT4vfEQ0G8k_XMRYuBz?usp=share_link)
+- [Computer Organization & Architecture](https://drive.google.com/drive/folders/14RcEtJm0G15KSUN77ka43CKdoWzMCS8D?usp=share_link)
