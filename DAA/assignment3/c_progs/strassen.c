@@ -68,33 +68,39 @@ void strassen(int n, int A[][n], int B[][n], int C[][n])
     int P1[n / 2][n / 2], P2[n / 2][n / 2], P3[n / 2][n / 2], P4[n / 2][n / 2], P5[n / 2][n / 2], P6[n / 2][n / 2], P7[n / 2][n / 2];
     int temp1[n / 2][n / 2], temp2[n / 2][n / 2];
 
-    // Divide A into 4 submatrices
+    // Divide A & B into 4 submatrices
     for (i = 0; i < n / 2; i++)
+    {
         for (j = 0; j < n / 2; j++)
+        {
             A11[i][j] = A[i][j];
-    for (i = 0; i < n / 2; i++)
-        for (j = n / 2; j < n; j++)
-            A12[i][j - n / 2] = A[i][j];
-    for (i = n / 2; i < n; i++)
-        for (j = 0; j < n / 2; j++)
-            A21[i - n / 2][j] = A[i][j];
-    for (i = n / 2; i < n; i++)
-        for (j = n / 2; j < n; j++)
-            A22[i - n / 2][j - n / 2] = A[i][j];
-
-    // Divide B into 4 submatrices
-    for (i = 0; i < n / 2; i++)
-        for (j = 0; j < n / 2; j++)
             B11[i][j] = B[i][j];
+        }
+    }
     for (i = 0; i < n / 2; i++)
+    {
         for (j = n / 2; j < n; j++)
+        {
+            A12[i][j - n / 2] = A[i][j];
             B12[i][j - n / 2] = B[i][j];
+        }
+    }
     for (i = n / 2; i < n; i++)
+    {
         for (j = 0; j < n / 2; j++)
+        {
+            A21[i - n / 2][j] = A[i][j];
             B21[i - n / 2][j] = B[i][j];
+        }
+    }
     for (i = n / 2; i < n; i++)
+    {
         for (j = n / 2; j < n; j++)
+        {
+            A22[i - n / 2][j - n / 2] = A[i][j];
             B22[i - n / 2][j - n / 2] = B[i][j];
+        }
+    }
 
     // Calculate the 7 products
     add(n / 2, A11, A22, temp1);
