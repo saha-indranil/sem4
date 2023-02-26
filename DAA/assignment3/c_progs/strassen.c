@@ -25,7 +25,7 @@ int main()
     printf("Order of both matrices: %d * %d\n", n, n);
     strassen(n, A, B, C);
 
-    printf("\nA matix=\n");
+    printf("\nA matrix=\n");
     for (i = 0; i < n; i++)
     {
         for (j = 0; j < n; j++)
@@ -33,7 +33,7 @@ int main()
         printf("\n");
     }
 
-    printf("\nB matix=\n");
+    printf("\nB matrix=\n");
     for (i = 0; i < n; i++)
     {
         for (j = 0; j < n; j++)
@@ -41,7 +41,7 @@ int main()
         printf("\n");
     }
 
-    printf("\nAxB matix=\n");
+    printf("\nAxB matrix=\n");
     for (i = 0; i < n; i++)
     {
         for (j = 0; j < n; j++)
@@ -169,19 +169,19 @@ void subtract(int n, int A[][n], int B[][n], int C[][n])
 // Strassen's Matrix Multiplication
 // Order of both matrices: 4 * 4
 
-// A matix=
+// A matrix=
 // 0       1       2       3
 // 1       2       3       4
 // 2       3       4       5
 // 3       4       5       6
 
-// B matix=
+// B matrix=
 // 0       2       4       6
 // 2       4       6       8
 // 4       6       8       10
 // 6       8       10      12
 
-// AxB matix=
+// AxB matrix=
 // 28      40      52      64
 // 40      60      80      100
 // 52      80      108     136
